@@ -636,6 +636,7 @@ blockquote {
     white-space: nowrap;
     display: inline-block;
     margin: 2px 0px;
+    line-height: 120%;
 }
 
 .tags a:hover {
