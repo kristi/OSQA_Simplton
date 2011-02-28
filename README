@@ -12,8 +12,25 @@ Assuming you already have osqa installed into a folder named osqa-server:
     cd ../..
     vim settings_local.py
 
-Change the value for OSQA_DEFAULT_SKIN:
+Now in settings_local.py, change the value for OSQA_DEFAULT_SKIN:
 
     OSQA_DEFAULT_SKIN = 'OSQA_Simplton'
 
 Enjoy.
+
+====
+
+Updating existing theme from repository
+
+    cd osqa-server/forum/skins/OSQA_Simplton
+    git pull
+
+====
+
+Uninstalling
+
+    cd osqa-server
+    rm -rf forum/skins/OSQA_Simplton
+    vim settings_local.py
+
+Change OSQA_DEFAULT_SKIN back to 'default'
