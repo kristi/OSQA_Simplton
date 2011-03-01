@@ -339,6 +339,9 @@ blockquote {
     padding: 3px 0px;
     margin-top: -1px;
     margin-left: 180px;
+
+    margin-top: 0px\9;
+    margin-left: 100px\9; /* IE pre v9 hack */
 }
 @-moz-document url-prefix() {
     #searchBar .options {
@@ -348,8 +351,9 @@ blockquote {
 
 
 #searchBar .options input[type="radio"] {
-    margin: 0 3px 0 15px;
+    margin: 0px 3px;
     display: none;
+    display: inline-block\9; /* IE pre v9 hack */
 }
 #searchBar .options input:hover {
     cursor: pointer;
