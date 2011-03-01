@@ -279,9 +279,10 @@
 
 {% cache 60 questions_tags settings.APP_URL question.id %}
 <div class="boxC">
-    <p>
+    <h3>
 		{% trans "Question tags" %}:
-    </p>
+		<hr>
+    </h3>
     <p class="tags" >
         {% for tag in question.tags.all %}
         	<a href="{% url tag_questions tag.name|urlencode %}"

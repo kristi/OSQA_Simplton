@@ -150,7 +150,7 @@ code {
     font-size: 100%;
     background-color: #F0F0F0;
     display: inline-block;
-    padding: 5px 8px;
+    padding: 2px 8px;
 }
 
 blockquote {
@@ -534,6 +534,7 @@ blockquote {
     border-style: solid;
     border-width: 1px;
 */
+    border-top: 1px solid #DDDDDD;
     margin-left: 10px;
     margin-bottom: 8px;
     padding: 10px;
@@ -1506,10 +1507,10 @@ ul.form-horizontal-rows li input {
 
 a.sidebar_button {
     background: none repeat scroll 0 0 #EEEEEE;
-    color: black;
+    color: #555555;
     cursor: pointer;
     font-size: 11px;
-    padding: 3px;
+    padding: 3px 8px;
 }
 
 a.sidebar_button:hover {
@@ -1737,7 +1738,7 @@ div.comment-tools a {
     color: black;
     cursor: pointer;
     font-size: 11px;
-    padding: 3px;
+    padding: 3px 8px;
 }
 
 div.comment-tools a:hover {
