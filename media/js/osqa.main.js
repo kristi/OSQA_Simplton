@@ -85,12 +85,24 @@ var response_commands = {
 
         $container.append(skeleton);
 
+        // Hack to update any latex in the preview text
+	// TODO: add a editor option to control whether this gets called
+	if (typeof MathJax != "undefined") {
+          MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+        }
+
         $('#comment-' + comment_id).slideDown('slow');
     },
 
     update_comment: function(comment_id, comment_text) {
         var $comment = $('#comment-' + comment_id);
         $comment.find('.comment-text').html(comment_text);
+
+        // Hack to update any latex in the preview text
+        // TODO: add a editor option to control whether this gets called
+        if (typeof MathJax != "undefined") {
+          MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+        }
 
         $comment.slideDown('slow');
     },

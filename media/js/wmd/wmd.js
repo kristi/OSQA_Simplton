@@ -854,6 +854,12 @@
 
 			pushPreviewHtml(text);
 			htmlOut = text;
+
+			// Hack to update any latex in the preview text
+			// TODO: add a editor option to control whether this gets called
+			if (typeof MathJax != "undefined") {
+				MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+			}
 		};
 
 		// setTimeout is already used.  Used as an event listener.
