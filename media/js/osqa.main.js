@@ -88,7 +88,7 @@ var response_commands = {
         // Hack to update any latex in the preview text
 	// TODO: add a editor option to control whether this gets called
 	if (typeof MathJax != "undefined") {
-          MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+          MathJax.Hub.Queue(["Typeset",MathJax.Hub,"comment-"+comment_id]);
         }
 
         $('#comment-' + comment_id).slideDown('slow');
@@ -101,7 +101,7 @@ var response_commands = {
         // Hack to update any latex in the preview text
         // TODO: add a editor option to control whether this gets called
         if (typeof MathJax != "undefined") {
-          MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+          MathJax.Hub.Queue(["Typeset",MathJax.Hub,"comment-"+comment_id]);
         }
 
         $comment.slideDown('slow');
