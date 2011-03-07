@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    markdown2latex.py=mdx_latex:main
+    

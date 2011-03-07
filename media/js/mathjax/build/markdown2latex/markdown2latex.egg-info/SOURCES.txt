@@ -1,0 +1,10 @@
+mdx_latex.py
+mdx_latex_test.py
+setup.py
+markdown2latex.egg-info/PKG-INFO
+markdown2latex.egg-info/SOURCES.txt
+markdown2latex.egg-info/dependency_links.txt
+markdown2latex.egg-info/entry_points.txt
+markdown2latex.egg-info/not-zip-safe
+markdown2latex.egg-info/requires.txt
+markdown2latex.egg-info/top_level.txt
